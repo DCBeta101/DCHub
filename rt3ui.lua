@@ -1,5 +1,3 @@
--- made with deepseek, because i cant create fuckin uis
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -74,18 +72,6 @@ Content.Size = UDim2.new(1, -30, 1, -60)
 Content.Position = UDim2.new(0, 15, 0, 45)
 Content.BackgroundTransparency = 1
 Content.Parent = MainFrame
-
-local Message = Instance.new("TextLabel")
-Message.Name = "Message"
-Message.Size = UDim2.new(1, 0, 0, 120)
-Message.BackgroundTransparency = 1
-Message.Text = "Hey guys, new update for RT3 script coming soon!\n\nPlease suggest what features to add or which ones to fix (if there are bugs in some for example).\n\nYou can write to me by going to the 'Home' tab and finding the GroupBox called Feedback."
-Message.TextColor3 = Color3.fromRGB(220, 220, 220) -- Light grey
-Message.TextSize = 14
-Message.Font = Enum.Font.Gotham
-Message.TextWrapped = true
-Message.TextYAlignment = Enum.TextYAlignment.Top
-Message.Parent = Content
 
 local OKButton = Instance.new("TextButton")
 OKButton.Name = "OKButton"
