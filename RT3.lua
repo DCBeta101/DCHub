@@ -5,3 +5,5 @@ return end
 -- Added Game Check Not In Obfuscated Code, Because Fucking Prometheus Obfuscator Broking Game Check
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DCBeta101/DCHub/refs/heads/main/update.lua'))()
+
+jdghjfgjkfytukku
