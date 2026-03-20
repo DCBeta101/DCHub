@@ -8,7 +8,30 @@ local startbutton = PlayerGui.GUI123.Frame.StartButton
 local EventsButton = Players.LocalPlayer.PlayerGui.MainGUI.Buttons.EventsButton
 local TeleportButton = Players.LocalPlayer.PlayerGui.MainGUI.Events.List."Sprint_Shirosato Quarter Mile Drag".TeleportButton
 
-startbutton.MouseButton1Click:Connect(function()
+-- Create ScreenGui
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "StartButtonGUI"
+screenGui.Parent = playerGui
+
+-- Create the Button
+local startButton = Instance.new("TextButton")
+startButton.Name = "StartButton"
+startButton.Size = UDim2.new(0, 300, 0, 100)  -- width 300, height 100
+startButton.Position = UDim2.new(0.5, -150, 0.5, -50)  -- center on screen
+startButton.AnchorPoint = Vector2.new(0.5, 0.5)
+startButton.Text = "START"
+startButton.Font = Enum.Font.SourceSansBold
+startButton.TextSize = 40
+startButton.TextColor3 = Color3.new(0, 0, 0)  -- black text
+startButton.BackgroundColor3 = Color3.new(1, 1, 1)  -- white button
+startButton.BorderSizePixel = 2
+startButton.Parent = screenGui
+
+
+startButton.MouseButton1Click:Connect(function()
     print("Start button was clicked!")
     -- Show the Events menu
     EventsMenu.Visible = true
