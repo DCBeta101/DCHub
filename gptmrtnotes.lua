@@ -1,3 +1,4 @@
+print("script started")
 --gptmrtnotes
 
 -- Start button script
